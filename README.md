@@ -105,20 +105,20 @@ git clone https://github.com/yourname/0x-scan.git
 cd 0x-scan
 ```
 
-###🐍 Create Virtual Environment
+### 🐍 Create Virtual Environment
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
-###📦 Install Dependencies
+### 📦 Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-###🗄️ Configure Database
+### 🗄️ Configure Database
 
-####Create database:
+#### Create database:
 
 ```bash
 CREATE DATABASE recon;
@@ -130,12 +130,12 @@ Edit .env:
 ```bash
 DATABASE_URL=postgresql+asyncpg://user:password@localhost:5432/recon
 ```
-###🏗️ Initialize Database
+### 🏗️ Initialize Database
 ```bash
 python -m scripts.init_db
 python -m scripts.seed_db
 ```
-###▶️ Run Backend API
+### ▶️ Run Backend API
 ```bash
 uvicorn app.main:app --reload
 ```
@@ -144,12 +144,12 @@ Access API:
 http://localhost:8000/docs
 ```
 
-###🛰️ Start Workers
+### 🛰️ Start Workers
 ```bash
 python -m scripts.run_worker
 ```
 
-###🖥️ Run Web UI
+### 🖥️ Run Web UI
 ```bash
 cd webui
 npm install
