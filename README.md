@@ -1,7 +1,3 @@
-# 0x-scan
-A fast and flexible port scanner built in Python for network auditing, service detection, and cybersecurity research.
-
-
 <p align="center">
   <h1 align="center">0x-scan</h1>
   <p align="center">
