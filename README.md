@@ -40,7 +40,7 @@ It is designed for:
 
 Linux-first, tested on Arch Linux and Kali Linux.
 
----
+
 
 ## ✨ Key Features
 
@@ -80,13 +80,13 @@ Linux-first, tested on Arch Linux and Kali Linux.
 - Scan management interface
 - Result visualization
 
----
+
 
 ## 📸 Screenshots
 
 > _Add screenshots of the dashboard, scan results, and API interface here._
 
----
+
 
 
 ## 🧰 Installation Guide
@@ -182,7 +182,6 @@ Open:
 http://localhost:5173
 ```
 
----
 
 
 ## 📖 Usage Guide
@@ -214,8 +213,6 @@ POST /scan/start
 
 Results processed asynchronously by workers.
 
-
----
 
 🧠 Feature Breakdown
 --------------------
@@ -311,7 +308,6 @@ Results processed asynchronously by workers.
 | Workers   | Background execution     |
 | Services  | Business logic           |
 
----
 
 ## 📁 Project Structure
 
@@ -397,7 +393,6 @@ Results processed asynchronously by workers.
 └── tests/                      # Unit & integration tests
 ```
 
----
 
 🧩 Code Structure Explanation
 -----------------------------
