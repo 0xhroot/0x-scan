@@ -85,6 +85,8 @@ Linux-first, tested on Arch Linux and Kali Linux.
 
 > _Add screenshots of the dashboard, scan results, and API interface here._
 
+---
+
 
 ## 🧰 Installation Guide
 
@@ -96,7 +98,6 @@ Linux-first, tested on Arch Linux and Kali Linux.
 - Linux (recommended)
 - Git
 
----
 
 ### 🔧 Clone Repository
 
@@ -105,16 +106,19 @@ git clone https://github.com/yourname/0x-scan.git
 cd 0x-scan
 ```
 
+
 ### 🐍 Create Virtual Environment
 ```bash
 python -m venv venv
 source venv/bin/activate
 ```
 
+
 ### 📦 Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
+
 
 ### 🗄️ Configure Database
 
@@ -126,41 +130,91 @@ CREATE USER user WITH PASSWORD 'password';
 GRANT ALL PRIVILEGES ON DATABASE recon TO user;
 ```
 
+
 Edit .env:
+
 ```bash
 DATABASE_URL=postgresql+asyncpg://user:password@localhost:5432/recon
 ```
+
+
 ### 🏗️ Initialize Database
+
 ```bash
 python -m scripts.init_db
 python -m scripts.seed_db
 ```
+
+
 ### ▶️ Run Backend API
+
 ```bash
 uvicorn app.main:app --reload
 ```
+
+
 Access API:
-```bash 
+
+```bash
 http://localhost:8000/docs
 ```
 
 ### 🛰️ Start Workers
+
 ```bash
 python -m scripts.run_worker
 ```
 
+
 ### 🖥️ Run Web UI
+
 ```bash
 cd webui
 npm install
 npm run dev
 ```
 
+
 Open:
+
 ```bash
 http://localhost:5173
 ```
 
+---
+
+
+## 📖 Usage Guide
+
+### 🔹 Basic Scan (Quick)
+```bash
+POST /scan/quick
+{
+  "target": "example.com"
+}
+```
+
+
+### 🔹 Full Scan
+```bash
+{
+  "target": "example.com",
+  "full_scan": true,
+  "ports": "common"
+}
+```
+
+
+### 🔹 Background Scan
+```bash
+POST /scan/start
+```
+
+
+Results processed asynchronously by workers.
+
+
+---
 
 🧠 Feature Breakdown
 --------------------
