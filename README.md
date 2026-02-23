@@ -44,6 +44,7 @@ Linux-first, tested on Arch Linux and Kali Linux.
 
 ## ✨ Key Features
 
+
 ### 🔍 Network Reconnaissance
 - High-speed asynchronous TCP port scanning
 - UDP probing without raw sockets
@@ -414,12 +415,29 @@ Results processed asynchronously by workers.
 *   **services/** — Business logic layer
     
 
+⚙️ Configuration Options
+-----------------------
+
+Configured via `.env`.
+
+Key variables:
+
+| Variable       | Purpose              |
+|----------------|----------------------|
+| API_KEY        | API authentication   |
+| DATABASE_URL   | Database connection  |
+| SCAN_TIMEOUT   | Network timeout      |
+| RATE_LIMIT     | Request limits       |
+
+
 ⚠️ Security & Ethical Use
 -------------------------
 
 This tool is intended for:
 
-✔ Authorized testing✔ Research environments✔ Owned infrastructure
+✔ Authorized testing
+✔ Research environments
+✔ Owned infrastructure
 
 Unauthorized scanning may violate laws and policies.
 
@@ -437,6 +455,21 @@ Unauthorized scanning may violate laws and policies.
 *   Can be distributed across nodes (future)
 
     
+🔎 Comparison with Nmap
+-----------------------
+
+0x-scan is NOT a replacement for Nmap.
+
+| Aspect            | Nmap     | 0x-scan |
+|-------------------|----------|----------|
+| Raw packet control | ✅       | ❌       |
+| Web intelligence   | Limited  | ✅       |
+| Automation         | Limited  | ✅       |
+| Database storage   | ❌       | ✅       |
+| UI                 | ❌       | ✅       |
+
+**Designed as a complementary modern platform.**
+
 
 📝 Logging System
 -----------------
