@@ -297,8 +297,106 @@ Results processed asynchronously by workers.
 5.  Results stored
     
 6.  UI retrieves output
-    
+   
 
+### 📦 Module Responsibilities
+
+| Layer     | Responsibility           |
+|-----------|--------------------------|
+| API       | Request handling         |
+| Scanner   | Orchestration            |
+| Analyzers | Intelligence gathering   |
+| Database  | Persistence              |
+| Workers   | Background execution     |
+| Services  | Business logic           |
+
+---
+
+## 📁 Project Structure
+
+```text
+0x-scan/
+├── README.md
+├── requirements.txt
+├── .env
+├── docker-compose.yml
+│
+├── app/                        # Main backend application
+│   ├── main.py                 # FastAPI entrypoint
+│   │
+│   ├── api/                    # REST API layer
+│   │   ├── dependencies.py
+│   │   └── routes/
+│   │       ├── scan.py
+│   │       ├── targets.py
+│   │       ├── results.py
+│   │       └── system.py
+│   │
+│   ├── core/                   # Core configuration & utilities
+│   │   ├── config.py
+│   │   ├── logging.py
+│   │   ├── security.py
+│   │   └── utils.py
+│   │
+│   ├── scanner/                # Scan orchestration engine
+│   │   ├── engine.py           # Coordinates scan workflow
+│   │   ├── scheduler.py        # Job queue / task management
+│   │   ├── target.py           # Target normalization
+│   │   └── rate_limiter.py     # Request throttling
+│   │
+│   ├── analyzers/              # Intelligence gathering modules
+│   │   ├── network/
+│   │   │   ├── port_scanner.py
+│   │   │   ├── udp_scanner.py
+│   │   │   └── os_fingerprint.py
+│   │   │
+│   │   ├── web/
+│   │   │   ├── http_probe.py
+│   │   │   ├── tls_analyzer.py
+│   │   │   ├── headers.py
+│   │   │   ├── cookies.py
+│   │   │   ├── tech_detect.py
+│   │   │   └── crawler.py
+│   │   │
+│   │   ├── infrastructure/
+│   │   │   ├── cdn_detect.py
+│   │   │   ├── waf_detect.py
+│   │   │   └── cloud_detect.py
+│   │   │
+│   │   └── osint/
+│   │       ├── dns.py
+│   │       ├── subdomains.py
+│   │       └── reputation.py
+│   │
+│   ├── database/               # Persistence layer
+│   │   ├── models.py
+│   │   ├── session.py
+│   │   └── crud/
+│   │       ├── scans.py
+│   │       ├── targets.py
+│   │       └── results.py
+│   │
+│   ├── workers/                # Background processing
+│   │   ├── scan_worker.py
+│   │   └── monitor_worker.py
+│   │
+│   └── services/               # Business logic layer
+│       ├── scan_service.py
+│       ├── report_service.py
+│       └── notification_service.py
+│
+├── webui/                      # Frontend application
+│   ├── src/
+│   └── package.json
+│
+├── scripts/                    # Dev & maintenance utilities
+│   ├── seed_db.py
+│   └── run_worker.py
+│
+└── tests/                      # Unit & integration tests
+```
+
+---
 
 🧩 Code Structure Explanation
 -----------------------------
