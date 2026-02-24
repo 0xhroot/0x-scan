@@ -109,6 +109,9 @@ Linux-first, tested on Arch Linux and Kali Linux.
 </p>
 
 
+## 🎬 Demo Video
+[![Watch Demo](Screenshots/preview.png)](Screenshots/op.mp4)
+
 ## 🧰 Installation Guide
 
 ### ✅ Prerequisites
