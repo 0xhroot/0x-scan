@@ -84,8 +84,20 @@ Linux-first, tested on Arch Linux and Kali Linux.
 
 ## 📸 Screenshots
 
-> _Add screenshots of the dashboard, scan results, and API interface here._
+<p align="center">
+  <img src="sc/1.png" width="45%">
+  <img src="sc/2.png" width="45%">
+</p>
 
+<p align="center">
+  <img src="sc/3.png" width="45%">
+  <img src="sc/4.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="sc/5.png" width="45%">
+  <img src="sc/6.png" width="45%">
+</p>
 
 
 
