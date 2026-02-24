@@ -85,18 +85,18 @@ Linux-first, tested on Arch Linux and Kali Linux.
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="sc/1.png" width="45%">
-  <img src="sc/2.png" width="45%">
+  <img src="ScreenShot/1.png" width="45%">
+  <img src="ScreenShot/2.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="sc/3.png" width="45%">
-  <img src="sc/4.png" width="45%">
+  <img src="ScreenShot/3.png" width="45%">
+  <img src="ScreenShot/4.png" width="45%">
 </p>
 
 <p align="center">
-  <img src="sc/5.png" width="45%">
-  <img src="sc/6.png" width="45%">
+  <img src="ScreenShot/5.png" width="45%">
+  <img src="ScreenShot/6.png" width="45%">
 </p>
 
 
