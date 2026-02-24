@@ -1,0 +1,34 @@
+# =============================
+# Application
+# =============================
+APP_NAME=0x-scan
+ENV=development
+
+# =============================
+# API Security
+# =============================
+API_KEY=dev-secret
+JWT_SECRET=super-secret-key
+
+# =============================
+# Server
+# =============================
+HOST=0.0.0.0
+PORT=8000
+
+# =============================
+# Database (PostgreSQL)
+# =============================
+DATABASE_URL=postgresql+asyncpg://reconuser:password@localhost:5432/recon
+
+# =============================
+# Redis (future use)
+# =============================
+REDIS_URL=redis://redis:6379
+
+# =============================
+# Scanner
+# =============================
+SCAN_TIMEOUT=5
+MAX_CONCURRENT_SCANS=100
+RATE_LIMIT=120
