@@ -110,8 +110,7 @@ Linux-first, tested on Arch Linux and Kali Linux.
 
 
 ## 🎬 Demo Video
-https://github.com/user-attachments/assets/af2d484c-a2c9-40d4-8dbc-f4ac00767cbe
-
+https://github.com/user-attachments/assets/bd6e860d-c271-46b8-bcca-eccaa92dd12c
 
 ## 🧰 Installation Guide
 
