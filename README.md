@@ -84,6 +84,7 @@ Linux-first, tested on Arch Linux and Kali Linux.
 
 ## 📸 Screenshots
 
+### 🧪 Backend + Workers Running
 <p align="center">
   <img src="ScreenShots/1.png" width="100%">
 </p>
@@ -92,19 +93,17 @@ Linux-first, tested on Arch Linux and Kali Linux.
   <img src="ScreenShots/2.png" width="95%">
 </p>
 
-<p align="center">
-  <img src="ScreenShots/3.png" width="100%">
-</p>
-
+### 🧩 Web Dashboard — System Information
 <p align="center">
   <img src="ScreenShots/4.png" width="100%">
 </p>
 
-
+### 🖥️ Web Dashboard — Scan & Results
 <p align="center">
   <img src="ScreenShots/5.png" width="100%">
 </p>
 
+### ⚡ Quick Scan Execution (Synchronous Scan)
 <p align="center">
   <img src="ScreenShots/6.png" width="100%">
 </p>
